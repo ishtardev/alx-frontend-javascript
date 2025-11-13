@@ -1,10 +1,11 @@
 interface Teacher {
-  firstName: string,
+  readonly firstName: string,
   fullTimeEmployee: boolean,
-  lastName: string,
+  readonly lastName: string,
   yearsOfExperience?: number
   location: string,
   contract: boolean,
+  [key: string]: any
 }
 
 const teacher3: Teacher = {
